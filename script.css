@@ -3,7 +3,7 @@ h1 {
 }
 
 body {
-    background: url('fond.png') no-repeat;
+    background: url('background OG.png') no-repeat;
     background-size: cover; 
     font-family: Arial;
 }
@@ -18,7 +18,7 @@ ul li{
     width:  200px;
     height: 40px;
     background-color: aliceblue;
-    opacity: .8;
+    opacity: .75;
     line-height: 40px;
     text-align: center;
     font-size: 18px;
@@ -42,4 +42,9 @@ ul li:hover ul li {
 
 p {
     color: white;
+}
+
+h3{
+    color:white;
+
 }
