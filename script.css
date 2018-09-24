@@ -1,5 +1,45 @@
+h1 {
+    color: white;
+}
+
 body {
-    background: url('Loki retouche.png') no-repeat;
+    background: url('fond.png') no-repeat;
     background-size: cover; 
     font-family: Arial;
+}
+ul{
+    margin: 2px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li{
+    float: left;
+    width:  200px;
+    height: 40px;
+    background-color: aliceblue;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 2px;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+ul li a:hover {
+    background-color:aquamarine;
+}
+ul li ul li {
+    display: none;
+    margin-left: -2px;
+}
+ul li:hover ul li {
+    display: block;
+}  
+
+p {
+    color: white;
 }
