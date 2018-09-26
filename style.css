@@ -1,0 +1,183 @@
+/*general*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background: url('background OG.png') no-repeat;
+    background-size: cover;
+    font-family: 'Anton', sans-serif;
+}
+
+/*accueil*/
+
+.h1accueil{
+    color: white;
+}
+
+.ulaccueil{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Anton', sans-serif;
+    list-style: none;
+}
+
+.ulaccueil li{
+    float: left;
+    width:  200px;
+    height: 40px;
+    background-color: aliceblue;
+    opacity: .90;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 2px;
+}
+.ulaccueil li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.ulaccueil li a:hover {
+    background-color:rgb(162, 193, 243);
+}
+.ulaccueil li ul li {
+    display: none;
+    margin-left: 0px;
+}
+
+.ulaccueil li:hover ul li {
+    display: block;
+    list-style: none;
+    margin-left: 0px;
+}
+
+#mainpg {
+    color: white;
+}
+
+#image1 {
+    max-width: 100%; 
+    height: auto;
+    text-align: center;
+    page-break-after: auto;
+}
+
+#mainpg{
+    text-align: left;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.contactformbody{
+    text-align: center;
+}
+.contacttitle {
+    margin-top: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+    page-break-after: always;
+}
+.contacttitle:hover{
+    font-size: 105%;
+}
+.contacttitle h1{
+    font-size: 30px;
+}
+
+.contacttitle h3{
+    font-size: 15px;
+}
+
+#contact-form{
+    margin-top: 30px;
+    transition: all 4s ease-in-out;
+}
+
+.control-form{
+    max-width: 450px;
+    min-width: 180px;
+    width: 60%;
+    /*background: white;*/
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    page-break-after: always;
+}
+
+.contact-form textarea{
+    font-family: 'Anton', sans-serif;
+}
+
+.submit{
+    page-break-before: always;
+    text-transform: uppercase;
+    background: rgba(62, 127, 231, 0.97);
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    max-width: 300px;
+    min-width: 180px;
+    width: 35%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*display: flex;
+    justify-content: center;*/
+}
+
