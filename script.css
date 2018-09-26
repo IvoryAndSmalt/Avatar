@@ -4,11 +4,11 @@ h1 {
 
 body {
     background: url('background OG.png') no-repeat;
-    background-size: cover; 
+    background-size: ;
     font-family: Arial;
 }
 ul{
-    margin: 2px;
+    margin: 0px;
     padding: 0px;
     list-style: none;
 }
@@ -34,7 +34,7 @@ ul li a:hover {
 }
 ul li ul li {
     display: none;
-    margin-left: -2px;
+    margin-left: 0px;
 }
 ul li:hover ul li {
     display: block;
@@ -45,6 +45,16 @@ p {
 }
 
 h3{
-    color:white;
+    color:white !important;
+
+}
+
+#image1 {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
