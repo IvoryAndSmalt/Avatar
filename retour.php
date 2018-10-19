@@ -16,7 +16,6 @@ echo($_POST['name']);
 print $to;
 print $_POST['Sujet'];
 print $_POST['message'];
-print_r(mail($to,$_POST['Sujet'],$_POST['message']));
 echo mail($to,$_POST['Sujet'],$_POST['message']);
 print phpinfo();
 ?>
