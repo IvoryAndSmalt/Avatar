@@ -114,16 +114,13 @@ body{
     font-family: 'Anton', sans-serif;
 }
 
+/**************CONTACT FORM***************/
 
-.contactformbody{
-    text-align: center;
-}
 .contacttitle {
-    margin-top: 50px;
+    margin: 50px 0;
     color: #fff;
     text-transform: uppercase;
-    transition: all 4s ease-in-out;
-    page-break-after: always;
+    text-align: center;
 }
 
 .contacttitle h1{
@@ -135,53 +132,35 @@ body{
     font-size: 15px;
 }
 
-#contact-form{
-    margin-top: 30px;
-    transition: all 4s ease-in-out;
-}
-
-#myform{
-    position: relative;
-    width: 70%;
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     max-width: 600px;
-    min-width: 180px;
+    min-width: 300px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .control-form{
-    position: relative;
-}
-
-.control-form input{
-    max-width: 600px;
-    min-width: 180px;
+    min-width: 500px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-    outline: none;
-    border-bottom: 1px solid gray;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 10px;
-    page-break-after: always;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px 15px;
+    margin-bottom: 1%;
+    background: rgba(255, 255, 255, 0.6);
 }
 
-.contact-form textarea{
-    font-family: 'Anton', sans-serif;
-}
-
-.control-form p{
-    padding: 5px 10px;
-    background: whitesmoke;
-    position: absolute;
-    top: 0;
-    left: 130%;
-    width: 200px;
+#contact-form textarea{
+    font-family: 'Roboto', sans-serif;
 }
 
 .submit{
-    page-break-before: always;
+    display: block;
+    margin: 0 auto;
     text-transform: uppercase;
     background: rgba(62, 127, 231, 0.97);
     border-color: transparent;
@@ -193,11 +172,9 @@ body{
     max-width: 300px;
     min-width: 180px;
     width: 35%;
-    margin-left: 25%;
-    margin-right: 25%;
-    /*display: flex;
-    justify-content: center;*/
 }
+
+/**************PAGE DE REMERCIEMENT************/
 
 .merci{
     text-align: center;
