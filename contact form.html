@@ -8,19 +8,32 @@
 </head>
 
 <body class="contactformbody">
-    <div class="contacttitle">
-        <h1>Contact Professionnel :</h1>
-        <h3>Envoyez-moi un message ici pour toute offre professionnelle</h3>
-    </div>
-    <div class="contact-form">
-        <form id="contact-form" action="retour.php" method="post">
-            <input type="text" name="name" class="control-form" placeholder="Nom Complet" required>
-            <input type="text" name="mail" class="control-form" placeholder="E-mail" required>
-            <input type="text" name="Sujet" class="control-form" placeholder="Sujet">
-            <textarea name="message" class="control-form" placeholder="Votre message" rows="10" cols="20"></textarea>
-            <button type="submit" class="submit" name="submit" >Envoyer</button>
+    <div class="container">
+        <form id="contact" action="retour.php" method="post">
+            <h3>Formulaire de contact</h3>
+            <h4>Envoyez-moi un message pour toute demande professionnelle</h4>
+            <fieldset>
+                <label for="nom">Votre nom : </label>
+                <input name="nom" id="nom" placeholder="Votre nom" type="text" tabindex="1" autofocus>
+                <p class="errorMessage"></p>
+            </fieldset>
+            <fieldset>
+                <label for="email">Votre email : </label>
+                <input name="email" id="email" placeholder="Votre email" type="text" tabindex="2">
+                <p class="errorMessage"></p>
+            </fieldset>
+            <fieldset>
+                <label for="message">Votre message : </label>
+                <textarea name="message" id="message" placeholder="Votre message..." tabindex="5"></textarea>
+                <p class="errorMessage"></p>
+            </fieldset>
+            <fieldset>
+                <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
         </form>
     </div>
 </body>
+
+<script src="script.js"></script>
 
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>retour</title>
+    <title>Merci pour votre message !</title>
 </head>
 <body>
     
@@ -12,12 +12,11 @@
 
 $to = "lucas.vandenberg@outlook.fr";
 
-echo($_POST['name']);
+echo($_POST['nom']);
 print $to;
-print $_POST['Sujet'];
+print $_POST['email'];
 print $_POST['message'];
-echo mail($to,$_POST['Sujet'],$_POST['message']);
-print phpinfo();
+echo mail($to,$_POST['email'],$_POST['message']);
 ?>
 
 </body>
