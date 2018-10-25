@@ -7,16 +7,34 @@
     <title>Merci pour votre message !</title>
 </head>
 <body>
+
+<h1 class="messageMerci">
+
+</h1>
     
 <?php
 
 $to = "lucas.vandenberg@outlook.fr";
+$errorMessage ="vous avez entré des caractères non-autorisés";
+$nomCorrige = $_POST['nom'];
+$mailCorrige = htmlspecialchars($_POST['email']);
+$messageCorrige = htmlspecialchars($_POST['message']);
+$regex = "/[a-zA-Z]/";
 
-echo($_POST['nom']);
-print $to;
-print $_POST['email'];
-print $_POST['message'];
-echo mail($to,$_POST['email'],$_POST['message']);
+if (!preg_match ($regex, $nomCorrige)){
+    print $errorMessage;
+}
+
+else{
+    mail ($to, htmlspecialchars ($_POST['email']),htmlspecialchars ($_POST['message']));
+    header('Location: https://lucasv.promo-24.codeur.online/avatar/remerciement.php');
+    exit; // Ensures that there is no code _after_ the redirect executed
+    // print $nomCorrige;
+    // print $to;
+    // print $mailCorrige;
+    // print $messageCorrige; a mettre dans la page PHP du résultat
+}
+
 ?>
 
 </body>
